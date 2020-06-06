@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Le Restaurant gardya</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Le Restaurant...">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Accueil">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Nous contacter</h1>
+        <form action="contact.html">
+            <fieldset>
+                <legend>Nous contacter</legend>
+                    <div>
+                        <label for="nameinput">Votre nom</label>
+                        <input type="text" name="firstname" id="nameinput">
+                    </div>
+                    <div>
+                        <label for="emailinput">Votre email</label>
+                        <input type="text" name="mail" id="emailinput" placeholder="contact@gamil.fr" required>
+                    </div>
+                    <div>
+                        <label for="fileinput">Piéce jointe</label>
+                        <input type="text" name="file" id="fileinput">
+                    </div>                       
+                    <div>
+                        <label id="sexe">Sexe</label>
+                        <select name="sexe" id="sexe" multiple>
+                            <option value="m">Masculin</option>
+                            <option value="f">Féminin</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label id="fruit et legume">Fruit préféré</label>
+                        <select name="fruit et legume" id="fruit et legume">
+                            <optgroup label="Fruit">
+                            <option>Orange</option>
+                            <option>Banane</option>
+                        </optgroup>
+                        <optgroup label="Legume">
+                            <option>Carotte</option>
+                        </optgroup>
+                        </select>
+                    </div>
+
+                    <!--
+                        <label>Sexe</label>
+                    <div>
+                        <input type="radio" name="sexe" id="masculin" checked>
+                        <label for="masculin">Masculin</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexe" id="feminin">
+                        <label for="feminin">Feminin</label>
+                    </div>
+                    -->
+                </div>
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Votre message"></textarea>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="cgu" checked> J'accepte les conditions d'utilisations</label>
+                </div>
+                <input type="submit" value="Envoyer un email">
+                <input type="reset" value="Annuler"> 
+                <!--
+                <button>Envoyer un mail</button>
+                -->               
+            </fieldset>
+        </form>
+    </body>
+</html>
